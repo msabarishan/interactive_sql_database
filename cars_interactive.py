@@ -14,9 +14,10 @@ option = st.selectbox(
   
 if(option=='delete'):
   st.write('Select the employee Id to be deleted' )
-  custID = int(input("Customer ID: ")
-  company_data = "DELETE FROM employee  WHERE emp_id = %d;"
-  st.write(number)
+  d = st.number_input("Enter emp number",min_value=1, max_value=1000, step=1)
+  company_data = "DELETE FROM employee  WHERE emp_id = d;"
+  postgreconnect.runquery(company_data)
+  st.write("Success")
     
   
 if(option=='insert'):
