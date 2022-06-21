@@ -9,15 +9,13 @@ st.write("Hi")
 
 option = st.selectbox(
   'Select one of the below option', 
-  ( 'display','update', 'delete', 'insert'))
+  ('display','delete', 'insert'))
 
-if(option=='update'):
-  st.write('Enter the employee id to be updated')
-  number = st.number_input("Enter the employee number")
   
 if(option=='delete'):
   st.write('Select the employee Id to be deleted' )
-  number = st.number_input("Enter the employee number")
+  number = st.number_input("Enter the employee number",min_value=1, max_value=1000, step=1)
+  company_data = 'DELETE FROM employee  WHERE emp_id='number';'
     
   
 if(option=='insert'):
