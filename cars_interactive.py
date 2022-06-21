@@ -8,7 +8,7 @@ import pandas as pd
 st.write("Hi")
 
 option = st.selectbox(
-  'What would you like to do?', 
+  'Select one of the below option', 
   ( 'display','update', 'delete', 'insert'))
 
 if(option=='update'):
