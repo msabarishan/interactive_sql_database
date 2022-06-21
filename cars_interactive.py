@@ -14,8 +14,8 @@ option = st.selectbox(
   
 if(option=='delete'):
   st.write('Select the employee Id to be deleted' )
-  number = st.number_input("Enter the employee number",min_value=1, max_value=1000, step=1)
-  company_data = 'DELETE FROM employee  WHERE emp_id = 'number';'
+  custID = int(input("Customer ID: ")
+  company_data = 'DELETE FROM employee  WHERE emp_id = %d;'
   st.write(number)
     
   
