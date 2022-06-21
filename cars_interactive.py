@@ -34,6 +34,7 @@ if(option=='insert'):
 if(option=='display'):
   company_data='Select * from employee;'
   sql_data=pd.DataFrame(postgreconnect.runquery(company_data))
+  sql_data.columns = ['emp_id','first_name','last_name','birth_day','Sex','salary','sup_id','branch_id']
   st.table(sql_data)
     
     
