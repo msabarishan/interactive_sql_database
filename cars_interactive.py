@@ -1,12 +1,13 @@
 
 import streamlit as st
+import postgreconnect
 
 
 st.write("Hi")
 
 option = st.selectbox(
   'What would you like to do?', 
-  ( ' ','update', 'delete', 'insert'))
+  ( 'display','update', 'delete', 'insert'))
 
 if(option=='update'):
   st.write('Enter the employee id to be updated')
@@ -27,5 +28,11 @@ if(option=='insert'):
     salary = st.text_input("Enter salary")
     super_id = st.number_input("Enter sup_id")
     branch_id = st.number_input("Enter branch_id")
+   
+if(option=='display'):
+  company_data='Select * from employee;'
+  sql_data=pd.DataFrame(postgreconnect.runquery(company_data))
+  st.table(sql_data)
+    
     
 
