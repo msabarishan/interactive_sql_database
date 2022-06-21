@@ -2,6 +2,7 @@
 import streamlit as st
 import psycopg2
 import postgreconnect
+import pandas as pd
 
 
 st.write("Hi")
