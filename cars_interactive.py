@@ -19,7 +19,7 @@ if(option=='delete'):
   
 if(option=='insert'):
     st.write('Enter the new employee data')
-    emp_id = st.number_input("Enter emp number",min_value=1, max_value=1000, step=1))
+    emp_id = st.number_input("Enter emp number",min_value=1, max_value=1000, step=1)
     first_name = st.text_input("Enter first name")
     last_name = st.text_input("Enter last name")
     birth_day = st.date_input("Enter date of birth")
