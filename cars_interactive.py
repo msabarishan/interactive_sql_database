@@ -19,13 +19,13 @@ if(option=='delete'):
   
 if(option=='insert'):
     st.write('Enter the new employee data')
-    emp_id=st.number_input("Enter number", 0, 25, 6, 2)
-    first_name=st.text_input("Enter your name")
-    last_name=st.text_input("Enter your name")
-    birth_day=st.date_input("Enter date of birth")
-    sex=st.selectbox('What would you like to do?', ('M', 'F'))
-    salary=st.text_input("Enter your name")
-    super_id=st.number_input("Enter number", 0, 25, 6, 2)
-    branch_id=st.number_input("Enter number", 0, 25, 6, 2)
+    emp_id = st.number_input("Enter emp number")
+    first_name = st.text_input("Enter first name")
+    last_name = st.text_input("Enter last name")
+    birth_day = st.date_input("Enter date of birth")
+    sex = st.selectbox('Select the gender', ('M', 'F'))
+    salary = st.text_input("Enter salary")
+    super_id = st.number_input("Enter sup_id")
+    branch_id = st.number_input("Enter branch_id")
     
 
