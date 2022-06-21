@@ -15,7 +15,7 @@ option = st.selectbox(
 if(option=='delete'):
   st.write('Select the employee Id to be deleted' )
   d = st.number_input("Enter emp number",min_value=1, max_value=1000, step=1)
-  company_data = "DELETE FROM employee  WHERE emp_id = {d};"
+  company_data = "DELETE FROM employee  WHERE emp_id = 108;"
   postgreconnect.runquery(company_data)
     
   
